@@ -1,0 +1,313 @@
+:root{
+    --prim-color :#4450dc;
+    --prim-color2:#854fee;
+    --title-color: #141313;
+    --text: #777;
+    --border: #201f1f17;
+    --gredent: linear-gradient(90deg, #4458dc 0% ,#854fee 100%);
+    --shado: 0px 10px 30px rgba(118,85,225,.3);
+    --box :0px 10px 30px rgba(57,56,61,.205);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%
+}
+
+.title-text{
+    font:normal bold sans-serif ;
+    line-height: 72px
+}
+
+button.button
+{
+    padding: .8rem 2.2rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: sans-serif;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px
+}
+
+.button.primary-button {
+    background: var(--gredent);
+    background-clip: padding-box;
+    color: whitesmoke;
+    box-shadow: var(--box);
+    transition: background .6s ease-in-out
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box
+}
+
+.button.primary-button::after,
+.button.secondary-button::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gredent);
+    z-index: -1;
+    border-radius: 4px
+}
+
+.button.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease-in-out
+}
+
+.button.secondary-button:hover{
+     background: var(--gredent);
+    color: whitesmoke;
+     box-shadow: var(--box);
+    
+}
+
+p.para{
+  color: var(--text);
+  font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+
+button:focus,
+button:active,
+button:hover,
+btn:active,
+btn.active
+{
+    outline: 0px !important;
+    box-shadow: none !important
+}
+/* Navbar */
+.header-area .main-menu .navbar{
+    padding: 10px 20px
+}
+
+.header-area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem
+}
+
+.header-area .main-menu .navbar .nav-item .nav-link{
+    /* font: stayle wight size line-heigt family*/
+    font: normal 500 15px 2px sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    color: var(--title-color)
+}
+
+.header-area .main-menu .navbar .navbar-nav .active{
+    background:var(--gredent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
+
+
+.header-area .main-menu .navbar .navbar-nav a:hover{
+    background:var(--gredent)
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
+
+/* Main Area / Banner Area */
+.sit-main .sit-baneer{
+    background: url(../img3/home-banner.png) no-repeat 0% 50%
+}
+
+.sit-main .sit-baneer .sit-title h3{
+    padding-top: 35%;
+    font-weight: 500
+}
+.sit-main .sit-baneer .sit-title h3::after{
+    content: '';
+    height: 2px;
+    width: 18rem;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px)
+}
+
+.sit-main .sit-baneer .sit-title h1{
+    font-size: 5rem
+}
+
+.sit-main .sit-baneer .sit-title h4{
+    font-size: 1.5rem
+}
+
+
+.sit-main .sit-baneer .banner-image img{
+    padding: 7rem 0;
+    width: 90rem
+}
+
+/* About Area */
+.sit-main  .aboyt-area{
+    padding: 4rem 5rem
+}
+
+.sit-main  .aboyt-area .about-site h2>span{
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 49px;
+    line-height: 60px;
+    font-family: sans-serif;
+    letter-spacing: 21px
+}
+
+.sit-main .aboyt-area .about-site .paragraf > p{
+    padding: .4rem 0
+}
+
+/* Brand Arae */
+.sit-main .brand-area{
+    padding: 1rem 10rem;
+    margin-bottom: 4rem
+}
+
+.sit-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center
+}
+
+.sit-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--border);
+    text-align: center;
+    padding: 1.8rem 0px;
+    margin: .9rem 0px;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: all .5s ease-in-out
+}
+
+.sit-main .brand-area .first-row .col-lg-4 .single-brand img{
+    width: 50%
+}
+
+.sit-main .brand-area .first-row .col-lg-4 .single-brand:hover{
+    box-shadow: var(--box);
+    transform: scale(1.1)
+}
+
+.sit-main .brand-area .first-row .col-lg-4 .single-brand:hover img{
+    filter: brightness(.15)
+}
+
+.sit-main .brand-area .experince-area{
+    padding-left: 1rem
+}
+
+.sit-main .brand-area .experince-area span{
+    display: block
+}
+
+.sit-main .brand-area .experince-area .years-area{
+    background: url(../img3/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative
+}
+
+.sit-main .brand-area .experince-area .years-area .years{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 84px;
+    line-height: 40px;
+    font-family: sans-serif;
+    color: var(--prim-color2);
+    z-index: 2
+}
+
+.sit-main .brand-area .experince-area h2 > span{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px
+}
+
+.sit-main .brand-area .experince-area .call-area{
+    padding-left: 10rem
+}
+.sit-main .brand-area .experince-area .bg-panel{
+    position: absolute;
+    left: -190px;
+    top: 0;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1
+}
+
+/* serveces Area */
+.sit-main .serveces-Area {
+    padding: 7rem 2rem
+}
+
+.sit-main .serveces-Area .services-title{
+    padding: 0 14rem
+}
+
+.sit-main .serveces-Area .services-title .title-text{
+    font-size: 35px
+}
+
+.sit-main .serveces-Area .services{
+    background: rgba(248, 252, 253, 0.73);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: all .7s ease-in-out
+}
+
+.sit-main .serveces-Area .services:hover{
+    box-shadow: var(--box)
+}
+
+/* Project Area */
+.sit-main .project-area{
+    padding: 4rem 0
+}
+
+.sit-main .project-area .button-group button{
+    background-color: transparent;
+    border: 0;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130px;
+    text-transform: uppercase
+}
+
+.sit-main .project-area .button-group button + button{
+    padding-left: 3rem
+}
+
+.sit-main .project-area .grid .our-project .img img{
+   height: 300px 
+}
+
+.sit-main .project-area .grid .our-project .title h4{
+    font-size: 25px;
+    line-height: 12px;
+    font-weight: 700
+}

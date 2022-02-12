@@ -1,0 +1,469 @@
+:root {
+    --main-color: #dd1d2a;
+    --sec-color: #b2a9bc;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%
+}
+#exam{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10
+}
+
+.about-text h1{
+    margin-bottom: 15px;
+    padding-top: 100px
+}
+.about-text p{
+    color: #4d4a4a;
+    margin-bottom: 50px
+}
+/* main */
+.fast-contact .brand{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+.fast-contact .brand span:first-child{
+    color: var(--main-color)
+}
+
+.fast-contact .brand span:last-child{
+    color: var(--sec-color)
+}
+
+.fast-contact img{
+    width: 40px;
+    position: fixed;
+    right: 50px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 10
+}
+
+.fast-contact nav{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: var(--main-color);
+    transition: .5s;
+    z-index: 10
+}
+
+.fast-contact nav ul {
+    margin-top: 5rem    
+}
+
+.fast-contact nav ul li{
+    list-style: none;
+    margin: 20px 20px
+}
+
+.fast-contact nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    transition: .5s
+}
+
+.fast-contact nav ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    transition: .9s
+}
+
+.fast-contact nav ul li:hover a::before{
+    width: 100%;
+    opacity: 1;
+}
+/* Home */
+ .home .baby-img{
+    width: 45%;
+    position: absolute
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    background: url(../babyimg/baby-boy-hat-covered-101537.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1
+}
+
+.home .home-text{
+    margin-top: 50%;
+    color: aliceblue
+}
+
+.home .home-text hr{
+    height: 3px;
+    background: var(--main-color);
+    border: 0
+}
+
+.home .home-text h2{
+    font-weight: bold
+}
+
+.home .home-text h1{
+    font-size: 60px
+}
+
+.home .home-text h1 span:first-child{
+    color: var(--sec-color);
+    font-weight: bold
+}
+
+.home .home-text h1 span:last-child{
+    color: var(--main-color);
+    font-weight: bold
+}
+
+.home .home-img{
+    width: 100%;
+    height: 100%
+}
+
+.home .home-img img{
+    width: 100%;
+    height: 100%
+}
+/* about */
+.about{
+    margin-top: 85vh;
+    margin-bottom: 100px;
+    height: auto;
+    background: #fff
+}
+
+.about .card{
+    margin: 15px auto;
+    transition: all .5s ease-in-out
+}
+
+.about .card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,.5)
+}
+/* shop */
+.shop{
+    background: #faa494;
+    padding-bottom: 100px;
+    height: auto;
+    position: relative
+}
+
+.shop .box{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 auto
+}
+
+.shop .box .img-box{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    clip-path: circle(60px at center 70px);
+    transition: all .5s ease-in-out
+}
+
+.shop .box .img-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(152, 151, 151, 0.3);
+    
+}
+
+.shop .box:hover .img-box{
+    top: 0;
+    transform: rotateY(360deg)
+}
+.shop .box .img-box img{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+    top: 10%
+}
+
+.shop .box .shop-content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    box-sizing: border-box
+}
+
+.shop .box .shop-content p{
+    color:  #4d4a4a
+}
+
+.shop .box .shop-content a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 5px;
+    display: inline-block
+}
+.shop .box .shop-content a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    opacity: 0;
+    transition: .5s
+}
+
+.shop .box .shop-content a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.shop .box .shop-content a:hover{
+    color: #000
+}
+
+.shop .box .shop-content p,
+.shop .box .shop-content h2,
+.shop .box .shop-content a{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .5s ease-in-out
+}
+
+.shop .box:hover .shop-content h2{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .5s
+}
+
+.shop .box:hover .shop-content p{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .7s
+}
+
+.shop .box:hover .shop-content a{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .9s
+}
+
+.imgShop{
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+ .imgShop img{
+    width: 100%
+}
+/* contact */
+.contact{
+    position: relative;
+    background: #faa494;
+    height: auto;
+    color: #000 !important;
+    padding: 100px 0
+}
+
+.contact form{
+    position: relative;
+}
+.contact .form-control{
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    height: 50px;
+    border-radius: 0;
+    font-size: 1.25rem;
+    background: rgba(196, 93, 100, 0.99);
+    color: #fff !important
+}
+
+.contact .form-control:focus,
+.contact .form-control:hover{
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,1);
+    box-shadow: none;
+    background: rgba(0,0,0,.7)
+}
+
+.contact .textarea{
+    min-height: 100px;
+}
+
+.contact .btnD1{
+    color: #fff;
+    background: linear-gradient(0deg, #dd1d2a, transparent);
+    border: 2px solid #fff;
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 5px 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    box-shadow: 0 9px 25px rgba(0,0,0,.7);
+     -webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+    transition: all .3s ease-in-out
+}
+
+.contact .btnD1:hover{
+    background: linear-gradient(20deg, #dd1d2a, transparent);
+    color: #fff;
+    box-shadow: 0 0 50px #dd1d2a
+}
+
+/* footer */
+footer{
+    background: #000;
+    padding: 20px 0 0
+}
+
+footer .cpryt{
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+    padding-left: 80px
+}
+
+
+footer .cpryt a
+{
+    color: #777;
+    text-decoration: none
+}
+
+.tel{
+    color: #777;
+}
+
+/* social-icon 
+.social-icon{
+    width: 40px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color)
+}
+
+.social-icon a i{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    transition: .5s
+}
+
+.social-icon a.facebook:hover i{
+    color: #4183d7
+}
+
+
+.social-icon a.twitter:hover i{
+    color: #19b5fe
+}
+
+.social-icon a.linkedin:hover i{
+    color: #0555ba
+}
+
+.social-icon a.instagram:hover i{
+    color: #dd3865
+}
+
+/*::-webkit-scrollbar{
+    width: 0
+}
+
+#scrollpath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,.05);
+}
+#prgreespar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animat 5s linear infinite 
+}
+
+@keyframes animat{
+    0%,100%{
+        filter: hue-rotate(0deg)
+    }
+    
+    50%{
+        filter: hue-rotate(360deg)
+    }
+}
+
+#prgreespar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px)
+}
+
+#prgreespar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px)
+}*/
